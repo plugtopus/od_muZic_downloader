@@ -1,0 +1,27 @@
+{
+   "background": {
+      "scripts": [ "core/jquery.min.js", "core/bg.js"]
+   },
+   "browser_action": {
+      "default_icon": "img/128.png"
+   },
+   "content_scripts": [ {
+      "css": [ "css/content.css" ],
+      "js": [ "core/jquery.min.js", "core/cs.js"],
+      "matches": [ "*://ok.ru/*", "*://*.ok.ru/*", "*://odnoklassniki.ru/*", "*://*.odnoklassniki.ru/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "ru",
+   "description": "__MSG_desc__",
+   "icons": {
+      "128": "img/128.png"
+   },
+   "manifest_version": 2,
+   "name": "__MSG_name__",
+   "permissions": [ "tabs", "downloads", "management", "webRequest", "webRequestBlocking", "webNavigation", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2018.3.14.1",
+   "web_accessible_resources": [ "img/*" ],
+   "author": "Plugtopus Agency",
+   "homepage_url": "https://plugtopus.agency"
+}

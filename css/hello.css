@@ -1,0 +1,122 @@
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: #3e3e3e;
+    font: normal 400 16px/1.2 Arial, sans-serif;
+    margin: 0;
+    min-width: 320px
+}
+
+img {
+    border: none;
+    max-width: 100%
+}
+
+p, ul, ol, h1, h2, h3, h4, h5, h6 {
+    font: inherit;
+    margin: 0
+}
+
+.w-main:after {
+    clear: both;
+    content: "";
+    display: block;
+    width: 100%
+}
+
+.cnts-main {
+    background-color: #fff;
+    display: block;
+    overflow: hidden;
+    padding: 15px 10px 20px;
+    text-align: center
+}
+
+.h-main {
+    background-color: #ee8208;
+    padding: 5px 10px 7px
+}
+
+.h-main__ic {
+    margin-top: 4px;
+    width: 26px
+}
+
+.h-main__ic--left {
+    float: left
+}
+
+.h-main__t {
+    color: #fefefe;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 0 10px;
+    text-align: center
+}
+
+.w-main__t {
+    color: #000000;
+    font-size: 20px;
+    overflow: hidden;
+    padding: 5px 0 15px 15px;
+    text-align: center
+}
+
+@media (min-width: 768px) {
+    .w-main {
+        margin: auto;
+        width: 100%
+    }
+
+    .h-main {
+        padding: 5px 0
+    }
+
+    .h-main__ic {
+        margin-top: 0;
+        width: auto
+    }
+
+    .h-main__t {
+        float: left
+    }
+}
+
+@media (max-width: 999px) and (min-width: 768px) {
+    .w-main {
+        max-width: 708px
+    }
+
+    .h-main__t {
+        font-size: 18px;
+        padding: 8px 0 0 20px
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        background: url("../img/bg.png") fixed
+    }
+
+    .w-main {
+        max-width: 850px
+    }
+
+    .cnts-main {
+        -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+        box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+        margin: 0 auto 0;
+        max-width: 990px;
+        width: 100%;
+        padding: 30px 0 40px
+    }
+
+    .h-main__ic--left {
+        margin-left: 85px
+    }
+
+    .h-main__t {
+        font-size: 20px;
+        padding: 5px 0 0 15px
+    }
+}
